@@ -260,7 +260,7 @@
         }
 
         #keahlian {
-            height: 100vh;
+            height: auto;
             background-color: #0b0b0b;
             color: rgb(186, 186, 186);
         }
@@ -279,7 +279,7 @@
 
         .content-keahlian {
             color: white;
-            background: #000;
+            background: linear-gradient(130deg, #000000, #141414);
             width: 570px;
             height: auto;
             margin: 20px;
@@ -314,6 +314,103 @@
 
         .content-keahlian a:hover {
             background: #8B5CF6;
+        }
+
+        .container-level {
+            justify-items: center;
+            align-item: center;
+        }
+
+        .container-level h4 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #8B5CF6;
+        }
+
+        .content-level {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 50px;
+        }
+
+        .left-level {
+            width: 450px;
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        .right-level {
+            width: 450px;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        .teks-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            margin-top: 25px;
+
+        }
+
+        .teks-bar h4 {
+            color: white;
+            font-size: 16px;
+        }
+
+        .teks-bar h5 {
+            color: #8B5CF6;
+            font-size: 14px;
+        }
+
+        .bar {
+            width: 450px;
+            height: 8px;
+            border-radius: 20px;
+            background: #8f8f8f;
+
+        }
+
+        .progres-react {
+            width: 427.5px;
+            height: 8px;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #8B5CF6, #9064f8, #a37ef8);
+        }
+
+        .progres-design {
+            width: 382.5px;
+            height: 8px;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #8B5CF6, #9064f8, #a37ef8);
+        }
+
+        .progres-cloud {
+            width: 337.5px;
+            height: 8px;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #8B5CF6, #9064f8, #a37ef8);
+        }
+
+        .progres-node {
+            width: 405px;
+            height: 8px;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #8B5CF6, #9064f8, #a37ef8);
+        }
+
+        .progres-ui {
+            width: 360px;
+            height: 8px;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #8B5CF6, #9064f8, #a37ef8);
+        }
+
+        .progres-mobile {
+            width: 315px;
+            height: 8px;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #8B5CF6, #9064f8, #a37ef8);
         }
     </style>
 </head>
@@ -494,9 +591,72 @@
                 </div>
             </div>
         </div>
+
+        <div class="container-level">
+            <h4>Level Keahlian</h4>
+            <div class="content-level">
+                <div class="left-level">
+                    <div class="teks-bar">
+                        <h4>React/TypeScript</h4>
+                        <h5>95%</h5>
+                    </div>
+                    <div class="bar">
+                        <div class="progres-react"></div>
+                    </div>
+
+                    <div class="teks-bar">
+                        <h4>Database Design</h4>
+                        <h5>85%</h5>
+                    </div>
+                    <div class="bar">
+                        <div class="progres-design"></div>
+                    </div>
+
+                    <div class="teks-bar">
+                        <h4>DevOps/Cloud</h4>
+                        <h5>75%</h5>
+                    </div>
+                    <div class="bar">
+                        <div class="progres-cloud"></div>
+                    </div>
+
+                </div>
+                <div class="right-level">
+                    <div class="teks-bar">
+                        <h4>Node.js/Express</h4>
+                        <h5>90%</h5>
+                    </div>
+                    <div class="bar">
+                        <div class="progres-node"></div>
+                    </div>
+
+                    <div class="teks-bar">
+                        <h4>UI/UX Design</h4>
+                        <h5>80%</h5>
+                    </div>
+                    <div class="bar">
+                        <div class="progres-ui"></div>
+                    </div>
+
+                    <div class="teks-bar">
+                        <h4>Mobile Development</h4>
+                        <h5>70%</h5>
+                    </div>
+                    <div class="bar">
+                        <div class="progres-mobile"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section id="proyek">
+            <h1>Portfolio Proyek</h1>
+            <p>Beberapa proyek terbaik yang telah saya kerjakan, menampilkan keahlian teknis dan kreativitas dalam
+                memecahkan masalah
+                nyata.</p>
+        </section>
     </section>
-
-
 </body>
 
 </html>
