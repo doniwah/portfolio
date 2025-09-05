@@ -197,7 +197,7 @@
             text-align: left;
             width: 660px;
             color: #FFFFFF;
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 30px;
         }
 
@@ -257,6 +257,63 @@
             color: #d4d4d4;
             font-size: 14px;
             padding-bottom: 40px;
+        }
+
+        #keahlian {
+            height: 100vh;
+            background-color: #0b0b0b;
+            color: rgb(186, 186, 186);
+        }
+
+        .title {
+            color: #8B5CF6;
+        }
+
+        .card-keahlian {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .content-keahlian {
+            color: white;
+            background: #000;
+            width: 570px;
+            height: auto;
+            margin: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .content-keahlian:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.4));
+        }
+
+        .content-keahlian h1 {
+            font-weight: 500;
+            color: #8B5CF6;
+        }
+
+        .content-keahlian a {
+            background: #212121;
+            border-radius: 9999px;
+            font-size: 11px;
+            display: inline-block;
+            padding: 6px 14px;
+            color: white;
+            margin-top: 10px;
+            cursor: default;
+        }
+
+        .content-keahlian a:hover {
+            background: #8B5CF6;
         }
     </style>
 </head>
@@ -319,11 +376,13 @@
                     startup hingga enterprise. Saya percaya bahwa teknologi terbaik adalah yang dapat memecahkan masalah
                     nyata dengan cara
                     yang elegant dan user-friendly.
-
+                    <br>
+                    <br>
                     Selalu belajar teknologi baru dan mengikuti perkembangan industri, saya fokus pada pembuatan solusi
                     yang
                     scalable,
-                    maintainable, dan memberikan value maksimal bagi pengguna.</p>
+                    maintainable, dan memberikan value maksimal bagi pengguna.
+                </p>
                 <div class="jumlah-proyek">
                     <h3 class="teks_one">50+ <br> <span> Proyek Selesai</span></h3>
                     <h3 class="teks_two">100% <br> <span> Client Satisfaction</span></h3>
@@ -363,6 +422,81 @@
             </div>
         </div>
     </section>
+
+    <section id="keahlian">
+        <div class="container">
+            <h1 class="title">Keahlian Saya</h1>
+            <p>Teknologi dan tools yang saya kuasai untuk membangun solusi digital yang powerful<br> dan scalable.</p>
+        </div>
+
+        <div class="card-keahlian">
+            <div class="content-keahlian">
+                <h1>Frontend Development</h1>
+
+                <div class="tool-keahlian">
+                    <a href="">React</a>
+                    <a href="">TypeScript</a>
+                    <a href="">Next.js</a>
+                    <a href="">Vue.js</a>
+                    <a href="">Tailwind CSS</a>
+                    <a href="">SASS/SCSS</a>
+                    <a href="">JavaScript ES6+</a>
+                    <a href="">HTML5</a>
+                    <a href="">CSS3</a>
+                    <a href="">Redux</a>
+                </div>
+            </div>
+
+            <div class="content-keahlian">
+                <h1>Backend Development</h1>
+
+                <div class="tool-keahlian">
+                    <a href="">Node.js</a>
+                    <a href="">Express.js</a>
+                    <a href="">Python</a>
+                    <a href="">Djago</a>
+                    <a href="">PostgreSQL</a>
+                    <a href="">MongoDB</a>
+                    <a href="">REST APIs</a>
+                    <a href="">GraphQL</a>
+                    <a href="">JWT</a>
+                    <a href="">Prisma</a>
+                </div>
+            </div>
+
+            <div class="content-keahlian">
+                <h1>Tools & Technologies</h1>
+
+                <div class="tool-keahlian">
+                    <a href="">Git</a>
+                    <a href="">Docker</a>
+                    <a href="">AWS</a>
+                    <a href="">Vercel</a>
+                    <a href="">Postman</a>
+                    <a href="">Jest</a>
+                    <a href="">Cypress</a>
+                    <a href="">Webpack</a>
+                    <a href="">Vite</a>
+                </div>
+            </div>
+            <div class="content-keahlian">
+                <h1>Soft Skills</h1>
+
+                <div class="tool-keahlian">
+                    <a href="">Problem salving</a>
+                    <a href="">Team Leadership</a>
+                    <a href="">Agile/Scrum</a>
+                    <a href="">Comunication</a>
+                    <a href="">Project Management</a>
+                    <a href="">Code Review</a>
+                    <a href="">Mentoring</a>
+                    <a href="">Documentation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </body>
 
 </html>
