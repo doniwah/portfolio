@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #242222;
+            height: 70px;
+            border-bottom: 0.2px solid #8f8f8f;
+        }
+
+        .navbar_teks {
+            color: #8B5CF6;
+        }
+
+        .navbar_link a {
+            color: #d2d2d2;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        .navbar_link a:hover {
+            color: #8B5CF6;
+        }
+
+        #beranda {
+            background-color: #242222;
+            max-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {}
+
+        .content1 h1 {
+            color: #8B5CF6;
+            font-size: 60px;
+            margin-top: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .content1 h1 span {
+            color: #ffffff;
+        }
+
+        .content1 p {
+            color: #c7c7c7;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .content1 button {
+            font-size: 15px;
+            font-weight: 500;
+            margin: 5px;
+            border: none;
+            width: 180px;
+            height: 45px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            cursor: pointer;
+        }
+
+        .btn_lihat_proyek {
+            background-color: #8B5CF6;
+            color: white;
+            box-shadow: 0 0 4px #FFFFFF;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .btn_lihat_proyek:hover {
+            box-shadow: 0 0 4px #8B5CF6;
+        }
+
+        .btn_hubungi {
+            background-color: black;
+            color: #8B5CF6;
+            outline: 1px solid #8B5CF6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn_hubungi:hover {
+            background-color: #8B5CF6;
+            color: #ffffff;
+            outline: 1px solid #8B5CF6;
+        }
+
+        .media_sosial a {
+            padding: 10px;
+        }
+
+        .media_sosial img {
+            width: 28px;
+            height: auto;
+            cursor: pointer;
+            filter: invert(80%);
+            transition: transform 0.5s ease, filter 0.5s ease;
+            margin-bottom: 40px
+        }
+
+        .media_sosial img:hover {
+            transform: scale(1.1);
+            filter: brightness(0) saturate(100%) invert(33%) sepia(83%) saturate(4200%) hue-rotate(240deg) brightness(95%) contrast(101%);
+        }
+
+        .btn_arrow img {
+            cursor: pointer;
+            filter: brightness(0) saturate(100%) invert(33%) sepia(83%) saturate(4200%) hue-rotate(240deg) brightness(95%) contrast(101%);
+            animation: bounce2 2s ease infinite;
+            margin-bottom: 15px
+        }
+
+        @keyframes bounce2 {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-5px);
+            }
+
+            60% {
+                transform: translateY(0px);
+            }
+        }
+
+        #tentang {
+            background-color: #000000;
+            height: 100vh;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        #tentang h1 {
+            color: #fff;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .deskripsi {
+            color: #FFFFFF;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-section {
+            width: 55%;
+            margin-left: 20px;
+        }
+
+        .left-section h3 {
+            color: #8B5CF6;
+            text-align: left;
+        }
+
+        .left-section .deskripsi2 {
+            text-align: left;
+            width: 660px;
+            color: #FFFFFF;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .jumlah-proyek {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .jumlah-proyek h3 {
+            margin: 5px;
+            text-align: center;
+        }
+
+        .jumlah-proyek .teks_three {
+            margin-right: 250px;
+        }
+
+
+
+        .jumlah-proyek span {
+            font-size: 14px;
+            color: #d2d2d2;
+            font-weight: 400;
+        }
+
+        .right-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 270px;
+            background-color: rgb(41, 41, 41);
+            justify-items: center;
+            text-align: center;
+            height: auto;
+            border-radius: 15px;
+            padding: 5px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.06);
+            filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.4));
+        }
+
+        .card img {
+            margin-top: 20px;
+        }
+
+        .card h4 {
+            color: white;
+        }
+
+        .card p {
+            color: #d4d4d4;
+            font-size: 14px;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar_teks">Portfolio</a>
+
+        <div class="navbar_link">
+            <a href="#">Beranda</a>
+            <a href="#">Tentang</a>
+            <a href="#">keahlian</a>
+            <a href="#">Proyek</a>
+            <a href="#">Kontak</a>
+            <button>Hubungi Saya</button>
+
+        </div>
+    </nav>
+
+    <section id="beranda">
+        <div class="container1">
+            <div class="content1">
+                <h1>Software<br><span>Engineer</span></h1>
+                <p>Saya membangun aplikasi web modern yang mengubah ide<br> menjadi solusi digital yang powerful dan
+                    elegan.
+                </p>
+
+                <button class="btn_lihat_proyek">Lihat Proyek Saya</button>
+                <button class="btn_hubungi">Hubungi Saya</button>
+
+                <div class="media_sosial">
+                    <a href="#"><img src="images/outline.png" alt=""></a>
+                    <a href="#"><img src="images/linkedin.png" alt=""></a>
+                    <a href="#"><img src="images/email.png" alt=""></a>
+                </div>
+
+                <a href="#" class="btn_arrow"><img src="images/arrow-down.png" alt=""></a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="tentang">
+        <div class="container">
+            <h1>Tentang saya</h1>
+            <p class="deskripsi">Seorang Software Engineer passionate dengan pengalaman 5+ tahun dalam<br>mengembangkan
+                aplikasi web
+                modern
+                menggunakan
+                teknologi terdepan.</p>
+        </div>
+        <div class="content">
+            <div class="left-section">
+                <h3>Pengalaman & Visi</h3>
+                <p class="deskripsi2">Dengan latar belakang yang solid dalam full-stack development, saya telah
+                    berkontribusi dalam
+                    berbagai
+                    proyek mulai dari
+                    startup hingga enterprise. Saya percaya bahwa teknologi terbaik adalah yang dapat memecahkan masalah
+                    nyata dengan cara
+                    yang elegant dan user-friendly.
+
+                    Selalu belajar teknologi baru dan mengikuti perkembangan industri, saya fokus pada pembuatan solusi
+                    yang
+                    scalable,
+                    maintainable, dan memberikan value maksimal bagi pengguna.</p>
+                <div class="jumlah-proyek">
+                    <h3 class="teks_one">50+ <br> <span> Proyek Selesai</span></h3>
+                    <h3 class="teks_two">100% <br> <span> Client Satisfaction</span></h3>
+                    <h3 class="teks_three">5+ <br> <span> Tahun Pengalaman</span></h3>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="card">
+                    <img src="images/email.png" alt="">
+                    <h4>Clean Code</h4>
+                    <p>
+                        Menulis kode yang bersih, maintainable, dan efisien
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="images/email.png" alt="">
+                    <h4>Performance</h4>
+                    <p>
+                        Mengoptimalkan performa aplikasi untuk user experience terbaik
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="images/email.png" alt="">
+                    <h4>Collaboration</h4>
+                    <p>
+                        Bekerja sama dalam tim dengan komunikasi yang efektif
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="images/email.png" alt="">
+                    <h4>Best Practices
+                    </h4>
+                    <p>
+                        Mengikuti standar industri dan best practices terkini
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
