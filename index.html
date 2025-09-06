@@ -8,6 +8,13 @@
     <title>Portfolio</title>
 
     <style>
+        :root {
+            --black-color: #0a0a0a;
+            --ungu-color: #9064f8;
+            --gradient-color: linear-gradient(130deg, #000000, #141414);
+            --abu-color: rgb(16, 16, 16);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -27,7 +34,7 @@
         }
 
         .navbar_teks {
-            color: #8B5CF6;
+            color: var(--ungu-color);
         }
 
         .navbar_link a {
@@ -37,7 +44,7 @@
         }
 
         .navbar_link a:hover {
-            color: #8B5CF6;
+            color: var(--ungu-color);
         }
 
         #beranda {
@@ -50,10 +57,8 @@
             text-align: center;
         }
 
-        .container {}
-
         .content1 h1 {
-            color: #8B5CF6;
+            color: var(--ungu-color);
             font-size: 60px;
             margin-top: 50px;
             text-align: center;
@@ -84,27 +89,27 @@
         }
 
         .btn_lihat_proyek {
-            background-color: #8B5CF6;
+            background-color: var(--ungu-color);
             color: white;
             box-shadow: 0 0 4px #FFFFFF;
             transition: box-shadow 0.3s ease;
         }
 
         .btn_lihat_proyek:hover {
-            box-shadow: 0 0 4px #8B5CF6;
+            box-shadow: 0 0 4px var(--ungu-color);
         }
 
         .btn_hubungi {
             background-color: black;
-            color: #8B5CF6;
-            outline: 1px solid #8B5CF6;
+            color: var(--ungu-color);
+            outline: 1px solid var(--ungu-color);
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .btn_hubungi:hover {
-            background-color: #8B5CF6;
+            background-color: var(--ungu-color);
             color: #ffffff;
-            outline: 1px solid #8B5CF6;
+            outline: 1px solid var(--ungu-color);
         }
 
         .media_sosial a {
@@ -152,7 +157,7 @@
         }
 
         #tentang {
-            background-color: #000000;
+            background-color: var(--black-color);
             height: 100vh;
 
         }
@@ -189,7 +194,7 @@
         }
 
         .left-section h3 {
-            color: #8B5CF6;
+            color: var(--ungu-color);
             text-align: left;
         }
 
@@ -261,7 +266,7 @@
 
         #keahlian {
             height: auto;
-            background-color: #0b0b0b;
+            background-color: var(--black-color);
             color: rgb(186, 186, 186);
         }
 
@@ -411,6 +416,514 @@
             height: 8px;
             border-radius: 20px;
             background: linear-gradient(90deg, #8B5CF6, #9064f8, #a37ef8);
+        }
+
+        #proyek {
+            height: auto;
+            background-color: black;
+        }
+
+        .title-proyek {
+            padding: 50px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .title-proyek h1 {
+            font-size: 40px;
+            color: rgb(139, 92, 246);
+        }
+
+        .title-proyek p {
+            text-align: center;
+            font-size: 18px;
+            color: #c7c7c7;
+            margin-top: 20px;
+        }
+
+        .card-proyek {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        .content-proyek {
+            width: 380px;
+            background-color: rgb(21, 21, 21);
+            justify-items: center;
+            margin: 20px;
+            border-radius: 10px;
+            padding-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .content-proyek:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.6));
+        }
+
+        .gambar {
+            width: 380px;
+            height: 200px;
+            background: rgb(168, 168, 168);
+            display: flex;
+            flex: wrap;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .gambar img {
+            width: 90%;
+            height: 90%;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+
+        .deskripsi-proyek {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            margin-bottom: 20px;
+        }
+
+        .deskripsi-proyek h3 {
+            font-weight: 500;
+            color: #8B3DFF;
+        }
+
+        .deskripsi-proyek h6 {
+            font-size: 12px;
+            background-color: #8B3DFF;
+            color: white;
+            justify-items: center;
+            border-radius: 10px;
+            width: 80px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .content-proyek p {
+            margin: 20px;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .fitur {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .fitur h6 {
+            width: auto;
+            padding: 2px 7px 2px 7px;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            border-radius: 10px;
+            color: white;
+            background-color: #494949;
+        }
+
+        .fitur h6:hover {
+            background-color: var(--ungu-color);
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .live {
+            width: 280px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            border-radius: 10px;
+            background: var(--ungu-color);
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+
+        }
+
+        .icon_link {
+            width: 20px;
+            height: auto;
+            left: 50px;
+            filter: invert(100%);
+        }
+
+        .github {
+            width: 50px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background: black;
+            border: none;
+            outline: 1px solid var(--ungu-color);
+            cursor: pointer;
+        }
+
+        .github img {
+            filter: brightness(0) saturate(100%) invert(33%) sepia(83%) saturate(4200%) hue-rotate(240deg) brightness(95%) contrast(101%);
+            width: 20px;
+            height: 20px;
+
+        }
+
+        .to_github {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .to_github img {
+            filter: brightness(0) saturate(100%) invert(33%) sepia(83%) saturate(4200%) hue-rotate(240deg) brightness(95%) contrast(101%);
+        }
+
+        .btn_togithub {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 20px 10px 20px;
+            background-color: black;
+            border-radius: 10px;
+            border: 1px solid var(--ungu-color);
+        }
+
+        .teks_proyek {
+            color: white;
+        }
+
+        #kolaborasi {
+            height: auto;
+            background-color: var(--abu-color);
+        }
+
+        .title_kolaborasi {
+            align-items: center;
+            justify-items: center;
+            padding: 50px;
+        }
+
+        .title_kolaborasi h1 {
+            margin-bottom: 20px;
+            font-size: 40px;
+            color: var(--ungu-color);
+        }
+
+        .title_kolaborasi p {
+            text-align: center;
+            color: rgb(130, 130, 130);
+            font-size: 18px;
+        }
+
+        .container_kolaborasi {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding-bottom: 20px;
+        }
+
+        .left_kolaborasi {
+            background-color: rgb(16, 16, 16);
+            border: 1px solid #1d1d1d;
+            width: 500px;
+            height: 771px;
+            margin-top: -10px;
+            padding: 20px;
+            color: var(--ungu-color);
+            border-radius: 10px;
+        }
+
+        .right_kolaborasi {
+            background-color: transparent;
+            color: var(--ungu-color);
+            width: 500px;
+            height: 801px;
+        }
+
+        .input_nama {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .input_nama input {
+            background-color: #1d1d1d;
+            width: 230px;
+            height: 40px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            padding-left: 10px;
+            margin-left: 0px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            background-color: #1d1d1d;
+            width: 450px;
+            height: 40px;
+            margin-bottom: 20px;
+            border: none;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: 0.5 solid #6b6b6b;
+        }
+
+        input:focus {
+            outline: 1.5px solid var(--ungu-color);
+
+        }
+
+        .teks_pesan {
+            height: 120px;
+        }
+
+        .btn_krim {
+            width: 450px;
+            height: 40px;
+            background-color: var(--ungu-color);
+            border-radius: 5px;
+            border: none;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            filter: drop-shadow(0 0 2px var(--ungu-color) 50%);
+        }
+
+        .btn_krim img {
+            filter: brightness(0) invert(1);
+            width: 20px;
+            height: auto;
+        }
+
+        .right_kolaborasi h1 {
+            font-weight: 500;
+        }
+
+        .card-kontak {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            width: 450px;
+            height: 70px;
+            background: linear-gradient(130deg, #000000, #141414);
+            color: #bdbdbd;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card-kontak:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 20px var(--ungu-color));
+            cursor: pointer;
+        }
+
+        .card-kontak img {
+            margin-left: 20px;
+            width: 30px;
+            height: 25px;
+        }
+
+        .teks_info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .teks_info h2 {
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .teks_info h6 {
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        .card-diskusi {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 450px;
+            border-radius: 10px;
+        }
+
+        .card-diskusi h1 {
+            font-size: 18px;
+            color: var(--ungu-color);
+        }
+
+        .card-diskusi p {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #bdbdbd;
+            font-weight: 400;
+        }
+
+        .btn_diskusi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            background-color: var(--ungu-color);
+            cursor: pointer;
+            box-shadow: #8B3DFF;
+            width: 190px;
+            height: 45px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .card-diskusi img {
+            width: 20px;
+            height: 20px;
+            filter: brightness(0) invert(1);
+        }
+
+        #footer {
+            height: auto;
+            background-color: #0a0a0a;
+        }
+
+        .container_footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding-top: 60px;
+            height: auto;
+            border-bottom: 1px solid #353535;
+        }
+
+        .portfolio {
+            width: 380px;
+            top: 200px;
+            margin-top: -80px;
+        }
+
+        .portfolio h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: var(--ungu-color);
+        }
+
+        .portfolio p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+
+        .quick_link {
+            width: 380px;
+        }
+
+        .hubungi_saya {
+            width: 380px;
+        }
+
+        .img_class {
+            display: flex;
+            justify-content: start;
+            justify-items: center;
+
+        }
+
+        .img_class img {
+            margin: 10px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .img_class img:hover {
+            transform: scale(1.05);
+            filter: brightness(0) saturate(100%) invert(33%) sepia(83%) saturate(4200%) hue-rotate(240deg) brightness(95%) contrast(101%);
+        }
+
+        .quick_link {
+            color: var(--ungu-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            margin-bottom: 30px;
+        }
+
+        .quick_link h3 {
+            margin-bottom: 20px;
+        }
+
+        .quick_link a {
+            color: #b3b3b3;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .quick_link a:hover {
+
+            color: var(--ungu-color);
+        }
+
+        .hubungi_saya {
+            margin-top: -80px;
+        }
+
+        .hubungi_saya h3 {
+            margin-bottom: 10px;
+            color: var(--ungu-color);
+        }
+
+        .hubungi_saya h4 {
+            margin-bottom: 5px;
+            font-weight: 450;
+            color: #b3b3b3;
+        }
+
+        .teks_copyright {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .teks_copyright h5 {
+            font-size: 15px;
+            font-weight: 400;
+            color: #b3b3b3;
         }
     </style>
 </head>
@@ -649,13 +1162,206 @@
                 </div>
             </div>
         </div>
-
-        <section id="proyek">
+    </section>
+    <section id="proyek">
+        <div class="title-proyek">
             <h1>Portfolio Proyek</h1>
-            <p>Beberapa proyek terbaik yang telah saya kerjakan, menampilkan keahlian teknis dan kreativitas dalam
+            <p>Beberapa proyek terbaik yang telah saya kerjakan, menampilkan keahlian teknis dan<br> kreativitas
+                dalam
                 memecahkan masalah
                 nyata.</p>
-        </section>
+        </div>
+
+        <div class="card-proyek">
+            <div class="content-proyek">
+                <div class="gambar"><img src="images/proyek_1.png" alt="proyek web hmti"></div>
+
+                <div class="deskripsi-proyek">
+                    <h3>Organization Profile</h3>
+                    <h6 href="">Featured</h6>
+                </div>
+                <p class="teks_proyek">A modern organizational profile website with a professional design, featuring
+                    complete
+                    information about vision,
+                    mission, structure, programs, and equipped with news, gallery, and interactive contact features.
+                </p>
+                <div class="fitur">
+                    <h6>Express.js</h6>
+                    <h6>Node.js</h6>
+                    <h6>MySQL</h6>
+                    <h6>Rumahweb</h6>
+                    <h6>Git</h6>
+                </div>
+                <div class="btn">
+                    <a href="https://hmjtipolije2025.com/" target="_blank" class="live"><img
+                            src="images/external-link.png" class="icon_link" alt="">Live
+                        Demo</a>
+                    <button class="github"><img src="images/outline.png" alt=""></button>
+                </div>
+            </div>
+            <div class="content-proyek">
+                <div class="gambar"><img src="images/proyek_2.png" alt="proyek web hmti"></div>
+
+                <div class="deskripsi-proyek">
+                    <h3>E-Competition Portal</h3>
+                    <h6 href="">Featured</h6>
+                </div>
+                <p class="teks_proyek">A modern competition registration website with a user-friendly interface,
+                    featuring online
+                    registration forms,
+                    participant data management, automated confirmations, and integrated announcement updates.</p>
+                <div class="fitur">
+                    <h6>Laravel</h6>
+                    <h6>MySQL</h6>
+                    <h6>RumahWeb</h6>
+                    <h6>Git</h6>
+                </div>
+                <div class="btn">
+                    <button class="live"><img src="images/external-link.png" class="icon_link" alt="">Live
+                        Demo</button>
+                    <button class="github"><img src="images/outline.png" alt=""></button>
+                </div>
+            </div>
+            <div class="content-proyek">
+                <div class="gambar"><img src="images/proyek_3.png" alt="proyek web hmti"></div>
+
+                <div class="deskripsi-proyek">
+                    <h3>Concert Tickets AOM</h3>
+                    <h6 href="">Featured</h6>
+                </div>
+                <p class="teks_proyek">A modern concert ticketing website with a seamless purchasing experience,
+                    featuring real-time
+                    seat selection, secure
+                    payment gateway integration, automated e-tickets, and an intuitive admin dashboard for event
+                    management.</p>
+                <div class="fitur">
+                    <h6>Laravel</h6>
+                    <h6>MySQL</h6>
+                    <h6>RumahWeb</h6>
+                    <h6>Midtrans</h6>
+                </div>
+                <div class="btn">
+                    <button class="live"><img src="images/external-link.png" class="icon_link" alt="">Live
+                        Demo</button>
+                    <button class="github"><img src="images/outline.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="to_github">
+            <a class="btn_togithub" href=""><img src="images/outline.png" alt="">Lihat Semua Proyek di Github</a>
+        </div>
+    </section>
+
+    <section id="kolaborasi">
+        <div class="title_kolaborasi">
+            <h1>
+                Mari Berkolaborasi
+            </h1>
+            <p>Punya proyek menarik atau ingin berdiskusi tentang teknologi? Saya senang<br>
+                mendengar dari Anda!</p>
+        </div>
+        <div class="container_kolaborasi">
+            <div class="left_kolaborasi">
+                <h1>Kirim Pesan</h1>
+                <form action="">
+                    <div class="input_nama">
+                        <input type="text" name="nama" placeholder="Nama Lengkap">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <input type="text" name="subjek" placeholder="Subjek">
+                    <input class="teks_pesan" type="text" name="pesan" placeholder="Pesan Anda">
+
+                    <button class="btn_krim"><img src="images/email.svg" alt="">Kirim Pesan</button>
+                </form>
+            </div>
+            <div class="right_kolaborasi">
+                <h1>Informasi Kontak</h1>
+                <div class="card-kontak">
+                    <img src="images/email.svg" alt="">
+                    <div class="teks_info">
+                        <h2>Email</h2>
+                        <h6>hello@developer.com</h6>
+                    </div>
+                </div>
+                <div class="card-kontak">
+                    <img src="images/telephone.svg" alt="">
+                    <div class="teks_info">
+                        <h2>Email</h2>
+                        <h6>hello@developer.com</h6>
+                    </div>
+                </div>
+                <div class="card-kontak">
+                    <img src="images/location.svg" alt="">
+                    <div class="teks_info">
+                        <h2>Email</h2>
+                        <h6>hello@developer.com</h6>
+                    </div>
+                </div>
+                <h1>
+                    Ikuti Saya
+                </h1>
+                <div class="card-kontak">
+                    <img src="images/github.svg" alt="">
+                    <div class="teks_info">
+                        <h2>Email</h2>
+                        <h6>hello@developer.com</h6>
+                    </div>
+                </div>
+                <div class="card-kontak">
+                    <img src="images/linkedin.svg" alt="">
+                    <div class="teks_info">
+                        <h2>Email</h2>
+                        <h6>hello@developer.com</h6>
+                    </div>
+                </div>
+                <div class="card-kontak">
+                    <img src="images/twitter.svg" alt="">
+                    <div class="teks_info">
+                        <h2>Email</h2>
+                        <h6>hello@developer.com</h6>
+                    </div>
+                </div>
+                <div class="card-diskusi">
+                    <h1>Siap untuk Proyek Baru?</h1>
+                    <p>Saya selalu terbuka untuk kesempatan menarik dan proyek yang menantang.</p>
+                    <button class="btn_diskusi"><img src="images/email.svg" alt="">Mari Berdiskusi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container_footer">
+            <div class="portfolio">
+                <h3>Portfolio</h3>
+                <p>Software Engineer passionate yang berfokus pada pembuatan solusi digital inovatif dan user-friendly.
+                </p>
+                <div class="img_class">
+                    <img src="images/github_abu.svg" alt="">
+                    <img src="images/linkedin_abu.svg" alt="">
+                    <img src="images/email_abu.svg" alt="">
+                </div>
+
+            </div>
+            <div class="quick_link">
+                <h3>Guick Links</h3>
+                <a href="#">Beranda</a>
+                <a href="#">Tentang</a>
+                <a href="#">Keahlian</a>
+                <a href="#">Proyek</a>
+                <a href="#">Kontak</a>
+            </div>
+            <div class="hubungi_saya">
+                <h3>Hubungi Saya</h3>
+                <h4>hello@developer.com</h4>
+                <h4>+62 895-6215-9562</h4>
+                <h4>Java, Indonesia</h4>
+            </div>
+        </div>
+        <div class="teks_copyright">
+            <h5>&copy;2025 Portfolio. All rights reserved.</h5>
+        </div>
     </section>
 </body>
 
