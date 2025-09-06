@@ -10,7 +10,7 @@
     <style>
         :root {
             --black-color: #0a0a0a;
-            --ungu-color: #9064f8;
+            --ungu-color: #8B5CF6;
             --gradient-color: linear-gradient(130deg, #000000, #141414);
             --abu-color: rgb(16, 16, 16);
         }
@@ -31,6 +31,9 @@
             background-color: #242222;
             height: 70px;
             border-bottom: 0.2px solid #8f8f8f;
+            position: fixed;
+            z-index: 999;
+            width: 100%;
         }
 
         .navbar_teks {
@@ -48,19 +51,22 @@
         }
 
         #beranda {
-            background-color: #242222;
+            background-color: var(--black-color);
             max-height: 100vh;
             display: flex;
+            background-size: cover;
             flex-direction: column;
+            opacity: 0.9;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
             text-align: center;
         }
 
         .content1 h1 {
-            color: var(--ungu-color);
+            color: #8B5CF6;
             font-size: 60px;
-            margin-top: 50px;
+            margin-top: 150px;
             text-align: center;
             font-weight: bold;
         }
@@ -120,8 +126,7 @@
             width: 28px;
             height: auto;
             cursor: pointer;
-            filter: invert(80%);
-            transition: transform 0.5s ease, filter 0.5s ease;
+            transition: transform 0.5s ease;
             margin-bottom: 40px
         }
 
@@ -252,6 +257,8 @@
 
         .card img {
             margin-top: 20px;
+            width: 40px;
+            height: 40px;
         }
 
         .card h4 {
@@ -955,9 +962,9 @@
                 <button class="btn_hubungi">Hubungi Saya</button>
 
                 <div class="media_sosial">
-                    <a href="#"><img src="images/outline.png" alt=""></a>
-                    <a href="#"><img src="images/linkedin.png" alt=""></a>
-                    <a href="#"><img src="images/email.png" alt=""></a>
+                    <a href="#"><img src="images/github_abu.svg" alt=""></a>
+                    <a href="#"><img src="images/linkedin_abu.svg" alt=""></a>
+                    <a href="#"><img src="images/email_abu.svg" alt=""></a>
                 </div>
 
                 <a href="#" class="btn_arrow"><img src="images/arrow-down.png" alt=""></a>
@@ -1001,28 +1008,28 @@
             </div>
             <div class="right-section">
                 <div class="card">
-                    <img src="images/email.png" alt="">
+                    <img src="images/code.svg" alt="">
                     <h4>Clean Code</h4>
                     <p>
                         Menulis kode yang bersih, maintainable, dan efisien
                     </p>
                 </div>
                 <div class="card">
-                    <img src="images/email.png" alt="">
+                    <img src="images/bolt.svg" alt="">
                     <h4>Performance</h4>
                     <p>
                         Mengoptimalkan performa aplikasi untuk user experience terbaik
                     </p>
                 </div>
                 <div class="card">
-                    <img src="images/email.png" alt="">
+                    <img src="images/person-3.svg" alt="">
                     <h4>Collaboration</h4>
                     <p>
                         Bekerja sama dalam tim dengan komunikasi yang efektif
                     </p>
                 </div>
                 <div class="card">
-                    <img src="images/email.png" alt="">
+                    <img src="images/trophy.svg" alt="">
                     <h4>Best Practices
                     </h4>
                     <p>
